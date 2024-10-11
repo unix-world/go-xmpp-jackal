@@ -1,6 +1,9 @@
 # jackal
 
 An XMPP server written in Go.
+The original repo has been archived by the original author.
+The new maintainer has moved the project here:
+https://github.com/unix-world/go-xmpp-jackal/
 
 ![CI Status](https://github.com/ortuman/jackal/workflows/CI/badge.svg)
 [![Go Report Card](https://goreportcard.com/badge/github.com/ortuman/jackal?style=flat-square)](https://goreportcard.com/report/github.com/ortuman/jackal)
@@ -61,9 +64,9 @@ $ env JACKAL_CONFIG_FILE=/your-custom-path/your-config.yaml jackal
 
 ### Helm chart
 
-To make it easy to install jackal via Helm in Kubernetes a chart has been included into this repository.<br/> 
+To make it easy to install jackal via Helm in Kubernetes a chart has been included into this repository.<br/>
 
-After customizing your own [values.yaml](helm/values.yaml) file run the following command to install and configure all required components under `jackal` namespace.   
+After customizing your own [values.yaml](helm/values.yaml) file run the following command to install and configure all required components under `jackal` namespace.
 
 ```sh
 sh ./helm/scripts/install.sh <your_custom_values>.yaml
@@ -75,7 +78,7 @@ In turn, an active chart can be updated by running the upgrade script as follows
 sh ./helm/scripts/upgrade.sh <your_custom_values>.yaml
 ```
 
-On the other hand, you can also remove the jackal chart from your Kubernetes cluster by running the uninstall script: 
+On the other hand, you can also remove the jackal chart from your Kubernetes cluster by running the uninstall script:
 
 ```sh
 sh ./helm/scripts/uninstall.sh
@@ -199,22 +202,22 @@ Once up and running, don't forget to [register one or more users](#creating-jack
 - [RFC 6120: XMPP CORE](https://xmpp.org/rfcs/rfc6120.html)
 - [RFC 6121: XMPP IM](https://xmpp.org/rfcs/rfc6121.html)
 - [XEP-0004: Data Forms](https://xmpp.org/extensions/xep-0004.html) *2.9*
-- [XEP-0012: Last Activity](https://xmpp.org/extensions/xep-0012.html) *2.0*  
+- [XEP-0012: Last Activity](https://xmpp.org/extensions/xep-0012.html) *2.0*
 - [XEP-0030: Service Discovery](https://xmpp.org/extensions/xep-0030.html) *2.5rc3*
 - [XEP-0049: Private XML Storage](https://xmpp.org/extensions/xep-0049.html) *1.2*
 - [XEP-0054: vcard-temp](https://xmpp.org/extensions/xep-0054.html) *1.2*
 - [XEP-0059: Result Set Management](https://xmpp.org/extensions/xep-0059.html) *1.0*
 - [XEP-0092: Software Version](https://xmpp.org/extensions/xep-0092.html) *1.1*
-- [XEP-0114: Jabber Component Protocol](https://xmpp.org/extensions/xep-0114.html) *1.6*  
+- [XEP-0114: Jabber Component Protocol](https://xmpp.org/extensions/xep-0114.html) *1.6*
 - [XEP-0115: Entity Capabilities](https://xmpp.org/extensions/xep-0115.html) *1.5.2*
 - [XEP-0122: Data Forms Validation](https://xmpp.org/extensions/xep-0122.html) *1.0.2*
 - [XEP-0138: Stream Compression](https://xmpp.org/extensions/xep-0138.html) *2.0*
 - [XEP-0160: Best Practices for Handling Offline Messages](https://xmpp.org/extensions/xep-0160.html) *1.0.1*
 - [XEP-0190: Best Practice for Closing Idle Streams](https://xmpp.org/extensions/xep-0190.html) *1.1*
 - [XEP-0191: Blocking Command](https://xmpp.org/extensions/xep-0191.html) *1.3*
-- [XEP-0198: Stream Management](https://xmpp.org/extensions/xep-0198.html) *1.6*  
+- [XEP-0198: Stream Management](https://xmpp.org/extensions/xep-0198.html) *1.6*
 - [XEP-0199: XMPP Ping](https://xmpp.org/extensions/xep-0199.html) *2.0*
-- [XEP-0202: Entity Time](https://xmpp.org/extensions/xep-0202.html) *2.0*  
+- [XEP-0202: Entity Time](https://xmpp.org/extensions/xep-0202.html) *2.0*
 - [XEP-0220: Server Dialback](https://xmpp.org/extensions/xep-0220.html) *1.1.1*
 - [XEP-0237: Roster Versioning](https://xmpp.org/extensions/xep-0237.html) *1.3*
 - [XEP-0280: Message Carbons](https://xmpp.org/extensions/xep-0280.html) *0.13.3*
