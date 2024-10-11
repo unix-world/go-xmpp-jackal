@@ -37,7 +37,7 @@ server.crt
 .vscode/
 
 # Dependency
-vendor/
+#vendor/
 
 # Generated files
 build
